@@ -1,0 +1,222 @@
+body {
+	background: #E9ECF8;
+		
+}
+
+.caixa {
+	position: absolute;
+	margin: 40px 0 0px 48px;
+	vertical-align: top;
+	mix-blend-mode: multiply;
+	width: 940px;
+}
+
+#input-texto {
+	background: #E9ECF8;
+	position: absolute;
+	width: 680px;
+	height: 300px;
+	left: 200px;
+	top: 168px;
+
+	font-style: normal;
+	font-size: 32px;
+	line-height: 150%;
+	border: none;
+
+}
+
+#exclamacao {
+	mix-blend-mode: multiply;
+	position: absolute;
+	margin: 480px 0 0 210px;
+	font-size: 18px;
+}
+
+#out-texto { 
+	position: absolute;
+	width: 400px;
+	height: 550px;
+	left: 920px;
+	top: 40px;
+	background: #FFFFFF;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	border-color: white;
+	font-size: 32px;
+	text-align: center;
+ }
+
+ .desenho {
+ 	position: absolute;
+ 	margin: -500px 950px;
+ 	mix-blend-mode: multiply;
+ }
+
+ .texto1 {
+ 	text-align: center;
+ 	color: #343A40;
+ 	font-size: 24px;
+ 	line-height: 120%;
+ 	font-weight: bold;
+ 	text-transform: lowercase;
+
+ }
+
+ .texto2 {
+ 	text-align: center;
+ 	color: #495057;
+ 	font-size: 16px;
+ 	line-height: 150%;
+ 	text-transform: lowercase;
+ }
+
+ .button-criptografar {
+
+	padding: 24px;
+	width: 310px;
+	height: 67px;
+	background: #0A3871;
+	border-radius: 24px;
+	margin: 39% 0 0 15%;
+
+	color: white;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	cursor: pointer;
+ }
+
+ .button-descriptografar{
+ 	
+	padding: 24px;
+	width: 328px;
+	height: 67px;
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	margin: 0 0 0 24px;
+
+	color: darkblue;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	cursor: pointer;
+
+ }
+
+.button-copiar {
+
+	width: 328px;
+	height: 67px;
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	vertical-align: top;
+	margin: 127% 0 0 10px;
+	
+	color: darkblue;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	cursor: pointer;
+
+}
+.rodape {
+	position: absolute;
+	margin: 12px 0 0 30%;
+	font: normal 13pt Arial;
+
+}
+
+.redesocial {
+
+	cursor: pointer;
+	mix-blend-mode: multiply;
+
+}
+
+.instagram {
+	width: 30px;
+	height: 27px;
+	margin: 3px 0 0 705px;	
+
+}
+
+.linkedin {
+	width: 30px;
+	height: 27px;
+	vertical-align: top;
+	margin: -29px 0 0 740px;
+	
+}
+
+.github {
+	width: 30px;
+	height: 27px;
+	vertical-align: top;
+	margin: -47px 0 0 775px;
+
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		width: 480px;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		height: auto;
+	}
+
+	#input-texto {
+		width: 300px;
+		height: 300px;
+		margin-left: -30%;
+
+	}
+
+	#exclamacao {
+		margin-left: 80px;
+	}
+
+
+	.button-criptografar {
+
+		margin-top: 520px;
+		
+	}
+
+	.button-descriptografar{
+
+		margin-left: 70px;
+		width: 310px;
+
+	}	
+
+	#out-texto {
+		margin-left: -210%;
+		margin-top: 160%;
+		width: 340px;
+	}
+
+	.desenho {
+		margin-top: 20%;
+		margin-left: 50px;
+		width: 320px;
+	}
+
+	.rodape {
+
+		margin-top: 155%;
+		margin-left: 80px;
+	}
+
+	.redesocial {
+		margin-top: 140%;
+		margin-left: -110%;	
+	}
+	}
+}
