@@ -11,6 +11,7 @@ function criptografar(texto) {
 
 	var textoEntrada = inputMensagem.value;
 	texto = texto.toLowerCase();
+	texto = texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 	var textoCriptografado = texto.replaceAll("e", "enter").replaceAll("i", "imes")
 	.replaceAll("a", "ai").replaceAll("o", "ober")
 	.replaceAll("u", "ufat");
@@ -19,7 +20,9 @@ function criptografar(texto) {
 
 
 function descriptografar(texto) {
-
+	
+	texto = texto.toLowerCase();
+	texto = texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 	var textoDescriptografado = texto.replaceAll("enter", "e").replaceAll("imes", "i")
 	.replaceAll("ai", "a").replaceAll("ober", "o")
 	.replaceAll("ufat", "u");
