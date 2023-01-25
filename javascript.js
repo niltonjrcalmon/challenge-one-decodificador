@@ -1,15 +1,11 @@
 
-/* puxar o campo de entrada, saída e botões do html*/
+
 var inputMensagem = document.querySelector("#input-texto");
 var outMensagem = document.querySelector("#out-texto");
 var botaoCripto = document.querySelector(".button-criptografar");
 var botaoDescripto = document.querySelector(".button-descriptografar");
 
-/* puxar varíaveis da imagem do campo de saída e os textos escritos*/
 var desenhoOut = document.querySelector(".desenho");
-
-/*função do criptografar, vai declarar uma variavel para pegar o texto/valor digitado (inputMensagem)
-e gerar mensagem criptografada usando replace, logo após usa o "retun" pra retornar/informar o valor digitado.*/
 
 function criptografar(texto) {
 
@@ -20,8 +16,6 @@ function criptografar(texto) {
 	return textoCriptografado;
 }
 
-/*função descriptografar, vai retornar a mensagem original digita usando replace, 
-logo após usa o "retun" pra retornar/informar o valor digitado.*/
 
 function descriptografar(texto) {
 
@@ -32,7 +26,6 @@ function descriptografar(texto) {
 
 }
 
-/* vai colocar campo de entrada, saída e a função criptografar*/
 function clicarCripto() {
 
 	var textoEntrada = inputMensagem.value;
@@ -41,7 +34,6 @@ function clicarCripto() {
 	desenhoOut.innerHTML = '<button class="button-copiar" onclick="clicarCopiar()">Copiar</button>';
 }
 
-/* vai colocar campo de entrada, saída e a função descriptografar*/
 function clicarDescripto() {
 	var textoEntrada = inputMensagem.value;
 	var mensagem = descriptografar(textoEntrada);
