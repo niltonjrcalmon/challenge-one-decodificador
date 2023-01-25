@@ -10,6 +10,7 @@ var desenhoOut = document.querySelector(".desenho");
 function criptografar(texto) {
 
 	var textoEntrada = inputMensagem.value;
+	texto = texto.toLowerCase();
 	var textoCriptografado = texto.replaceAll("e", "enter").replaceAll("i", "imes")
 	.replaceAll("a", "ai").replaceAll("o", "ober")
 	.replaceAll("u", "ufat");
