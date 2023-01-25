@@ -1,11 +1,11 @@
 
-
 var inputMensagem = document.querySelector("#input-texto");
 var outMensagem = document.querySelector("#out-texto");
 var botaoCripto = document.querySelector(".button-criptografar");
 var botaoDescripto = document.querySelector(".button-descriptografar");
 
 var desenhoOut = document.querySelector(".desenho");
+
 
 function criptografar(texto) {
 
@@ -20,9 +20,9 @@ function criptografar(texto) {
 
 
 function descriptografar(texto) {
-	
+
 	texto = texto.toLowerCase();
-	texto = texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+	texto = texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");	
 	var textoDescriptografado = texto.replaceAll("enter", "e").replaceAll("imes", "i")
 	.replaceAll("ai", "a").replaceAll("ober", "o")
 	.replaceAll("ufat", "u");
