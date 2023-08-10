@@ -1,6 +1,6 @@
 # Alura One - Oracle Next Education 
 
-# Challenge ONE | JavaScript| Front End | Decodificador de texto
+# Challenge ONE | JavaScript | Front End | Decodificador de texto
 
 # Tópicos
 
