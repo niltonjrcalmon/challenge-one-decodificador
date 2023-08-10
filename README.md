@@ -1,6 +1,6 @@
 # Alura One - Oracle Next Education 
 
-# Challenge ONE | Java | Back End | Conversor de Moeda e Temperatura
+# Challenge ONE | JavaScript| Front End | Decodificador de texto
 
 # Tópicos
 
